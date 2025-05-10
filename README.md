@@ -71,6 +71,8 @@ Use TfidfVectorizer to transform cleaned text into numerical features.
 Use LabelEncoder to encode categorical labels for training.
 
 6. Model Training
+
+   
 Option A: Train a LogisticRegression model from Scikit-learn.
 
 Option B: Train a simple TensorFlow Sequential model with Dense layers.
