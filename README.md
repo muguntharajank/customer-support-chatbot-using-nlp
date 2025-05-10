@@ -1,10 +1,10 @@
-## customer-support-chatbot-using-nlp
+# customer-support-chatbot-using-nlp
 
 
-#🤖 Chatbot AI using E-Commerce Data
+🤖 Chatbot AI using E-Commerce Data
 This project builds a basic AI-powered chatbot trained on real-world e-commerce order data. The chatbot can answer user queries related to orders, shipping, payments, and products using intent classification and machine learning.
 
-#📌 Overview
+📌 Overview
 The goal of this project is to:
 
 Preprocess and merge datasets from an e-commerce platform.
@@ -15,7 +15,7 @@ Train an intent classification model using either Logistic Regression or a simpl
 
 Enable the chatbot to respond to user inputs based on learned intents.
 
-#📁 Dataset Used
+📁 Dataset Used
 The chatbot is trained on merged data from the Olist E-Commerce Dataset:
 
 olist_orders_dataset.csv – Customer order metadata.
@@ -28,7 +28,7 @@ olist_products_dataset.csv – Product metadata (including category names).
 
 These are merged to simulate question-answer pairs and chatbot queries.
 
-#🔧 Installation
+🔧 Installation
 Python Version
 Python 3.7+
 
@@ -37,7 +37,9 @@ bash
 Copy
 Edit
 pip install pandas scikit-learn tensorflow
-#📂 File Structure
+
+
+📂 File Structure
 text
 Copy
 Edit
@@ -48,7 +50,9 @@ olist_order_dataset/
 ├── olist_order_items_dataset.csv
 ├── olist_order_payments_dataset.csv
 └── olist_products_dataset.csv
-#🧠 Workflow
+
+
+🧠 Workflow
 1. Library Import
 Essential ML and deep learning libraries like Scikit-learn, TensorFlow, Pandas.
 
@@ -81,7 +85,9 @@ Take user input, transform it using TF-IDF.
 
 Predict intent and respond accordingly.
 
-#💬 Sample Code Snippet
+
+
+💬 Sample Code Snippet
 python
 Copy
 Edit
@@ -90,14 +96,17 @@ def get_response(user_input):
     vector = vectorizer.transform([cleaned])
     pred = model.predict(vector)
     return label_encoder.inverse_transform(pred)[0]
-#✅ Model Evaluation
+
+
+✅ Model Evaluation
 Accuracy printed after training.
 
 Supports both traditional ML and neural network classifiers.
 
 Use either train_test_split or manual test queries.
 
-#📌 Notes
+
+📌 Notes
 The chatbot logic is built primarily for educational and demo purposes.
 
 Performance depends heavily on how you structure and label training queries.
